@@ -1,0 +1,53 @@
+#   =====================================================
+#   Sum of "n" numbers - Python Programming - TRUZZBLOGG
+#   Original Video: https://youtu.be/kE-JgH5d6Xs
+#   =====================================================
+
+#   What is the sum of numbers from 0 to n?
+#   For example:
+#   What is the sum of the first 100 whole numbers?
+
+# ****||****||****||****||****||****||****||
+# First Method: Using a given number (n)
+# ****||****||****||****||****||****||****||
+
+total = 0
+num = 10
+
+for i in range(0, num+1):
+    total = total + i
+
+# print using placeholder (old way)
+# print("The sum of numbers from 0 to %i is: %i" %(num,total))
+
+# print using format (modern way)
+print("The sum of numbers from 0 to {} is: {}".format(num,total))
+
+# ****||****||****||****||****||****||****||****||
+# Second Method: Using an input given by the user
+# ****||****||****||****||****||****||****||****||
+
+total = 0
+num = int(input("Please, enter a number:"))
+
+for i in range(0, num+1):
+    total = total + i
+
+# print using placeholder (old way)
+# print("The sum of numbers from 0 to %i is: %i" %(num,total))
+
+# print using format (modern way)
+print("The sum of numbers from 0 to {} is: {}".format(num,total))
+
+
+# ****||****||****||****||****||****||****||****||
+# Bonus: Making our code reusable - Function
+# ****||****||****||****||****||****||****||****||
+
+def sumOf(num):
+     total = 0
+
+     for i in range(1, num + 1):
+         total = total +i
+     return total
+print(sumOf(10))
