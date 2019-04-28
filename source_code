@@ -61,4 +61,4 @@ total_n_sum = 0
 while (n >= 0):
     total_n_sum += n
     n-=1
-print ("Sum of "n" numbers using WHILE loop is: {} ".format(total_n_sum))
+print ('Sum of "n" numbers using WHILE loop is: {} '.format(total_n_sum))
