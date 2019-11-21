@@ -41,7 +41,7 @@ print("The sum of numbers from 0 to {} is: {}".format(num,total))
 
 
 # ****||****||****||****||****||****||****||****||
-# Bonus: Making our code reusable - Function
+# Bonus 1: Making our code reusable - Function
 # ****||****||****||****||****||****||****||****||
 
 def sumOf(num):
@@ -53,7 +53,7 @@ def sumOf(num):
 print(sumOf(10))
 
 # ****||****||****||****||****||****||
-# Another Bonus: Using WHILE Loop
+# Bonus 2: Using WHILE Loop
 # ****||****||****||****||****||****||
 
 n = 5
@@ -62,3 +62,15 @@ while (n >= 0):
     total_n_sum += n
     n-=1
 print ('Sum of "n" numbers using WHILE loop is: {} '.format(total_n_sum))
+
+
+# ****||****||****||****||****||****||****||
+# Bonus 3: Using Mathematical formula
+# ****||****||****||****||****||****||****||
+
+
+n = 10
+# Getting the 'n' value from the user (user input):
+# n = int(input("Please, enter a number:"))
+sum_n = (n * (n + 1)) / 2
+print ('Sum of "n" numbers using the Mathematical Formula is: {} '.format(sum_n))
